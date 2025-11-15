@@ -1,0 +1,44 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Base Layout --- */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* ✅ prevents horizontal scrollbars */
+  background-color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* --- App Wrapper --- */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  overflow-x: hidden; /* ✅ prevents rare flex overflow */
+}
+
+/* --- Container (centers all content) --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Center text by default in container --- */
+.container h1,
+.container h2,
+.container p {
+  text-align: center;
+}
