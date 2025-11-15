@@ -1,0 +1,93 @@
+.header{
+    height: 36vw;
+    margin: 10px auto;
+    background: url('/Header.webp') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7cbe0;
+  padding: 80px 10%; /* Increase padding-top to push content down */
+  box-sizing: border-box;
+}
+
+/* Content container */
+.header-content {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 80px; /* 🟢 Add this to move text downward */
+}
+
+/* Headline text */
+.header-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+/* Paragraph */
+.header-content p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 400px;
+}
+
+/* Button styling */
+.view-flower-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.view-flower-btn:hover {
+  background-color: #ff4081;
+}
+.floating-petals span {
+  position: absolute;
+  animation: float 10s linear infinite;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.floating-petals span:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+.floating-petals span:nth-child(2) {
+  left: 50%;
+  animation-delay: 3s;
+}
+.floating-petals span:nth-child(3) {
+  left: 80%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-400px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+

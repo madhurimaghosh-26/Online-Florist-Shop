@@ -1,0 +1,111 @@
+/* 🌸 Flower Card Container */
+.flower-item {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flower-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 🌺 Image Container */
+.flower-item-img-container {
+  position: relative;
+}
+
+.flower-item-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/* ➕ Add Button (when itemCount = 0) */
+.add {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  background-color: #ff4081;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.add:hover {
+  transform: scale(1.1);
+  background-color: #e73370;
+}
+
+/* 🧮 Counter Box (when itemCount > 0) */
+.flower-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #fff;
+  border: 2px solid #ff4081;
+  color: #ff4081;
+  border-radius: 25px;
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 90px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* + and - buttons inside counter */
+.flower-item-counter img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.flower-item-counter img:hover {
+  transform: scale(1.15);
+}
+
+/* 💬 Info Section */
+.flower-item-info {
+  padding: 12px;
+}
+
+.flower-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flower-item-name-rating p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flower-item-desc {
+  color: #555;
+  font-size: 14px;
+  margin: 8px 0;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flower-item-price {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 16px;
+}

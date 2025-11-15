@@ -1,0 +1,74 @@
+.explore-flower {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.explore-flower h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.explore-flower p {
+  color: #555;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.flower-categories {
+  display: flex;
+  overflow-x: auto;
+  justify-content: flex-start;
+  gap: 25px;
+  padding: 25px 10px;
+  scrollbar-width: none;
+}
+
+.flower-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.category-item {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex: 0 0 auto;
+}
+
+.category-item img,
+.category-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* ✅ “All” circle */
+.category-circle.all {
+  background-color: #ffe3ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e91e63;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.category-item.active img,
+.category-item.active .category-circle {
+  border-color: #ff4c7a;
+  box-shadow: 0 0 10px rgba(255, 76, 122, 0.4);
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+}
+
+.category-item p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333;
+}

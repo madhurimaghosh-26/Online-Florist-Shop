@@ -1,0 +1,23 @@
+.menu-page {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #fffafc;
+  min-height: 80vh;
+}
+
+.menu-page h1 {
+  font-size: 36px;
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+.menu-page p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.menu-content {
+  width: 90%;
+  margin: 0 auto;
+}
